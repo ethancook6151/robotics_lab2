@@ -12,6 +12,7 @@ if __name__ == '__main__':
   # Test vector 
   v0 = rbm.vec(0,1,1)
 
+  # Apply angle to metrics 
   Rx = rbm.rot_x(psi)
   Ry = rbm.rot_y(theta)
   Rz = rbm.rot_z(phi)
