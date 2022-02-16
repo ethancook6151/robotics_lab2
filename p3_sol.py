@@ -2,6 +2,8 @@ import math
 import numpy as np
 import p2_sol as p2
 
+
+# Transform 1: x = 2.5, z = 0.5, y= -1.5
 def transform_1():
   Tx = p2.trans_x(2.5)
   Tz = p2.trans_z(0.5)
@@ -15,7 +17,8 @@ def transform_1():
   v01 = R.dot(v0)
   print('Tranformation 1: \n', v01, '\n')
 
-
+  
+#  Transform 2: z = 0.5, x = 2.5, y= -1.5
 def transform_2():
   Tz = p2.trans_z(0.5)
   Tx = p2.trans_x(2.5)
@@ -29,7 +32,8 @@ def transform_2():
   v01 = R.dot(v0)
   print('Tranformation 2: \n', v01, '\n')
 
-
+  
+# Transform 3: Is oposite of Transform 1
 def transform_3():
   Tx = p2.trans_x(2.5)
   Tz = p2.trans_z(0.5)
@@ -43,7 +47,7 @@ def transform_3():
   v01 = R.dot(v0)
   print('Tranformation 3: \n', v01, '\n')
 
-
+# Transform 4: Is oposite of Transform 2
 def transform_4():
   Tz = p2.trans_z(0.5)
   Tx = p2.trans_x(2.5)
@@ -58,6 +62,7 @@ def transform_4():
   print('Tranformation 4: \n', v01, '\n')
 
 
+# Transform 5: Rotate x = pie/2, Transform x = 3, Transfrom z = -3, Rotate z = pie/2
 def transform_5():
   psi = math.pi/2
   phi = -math.pi/2
